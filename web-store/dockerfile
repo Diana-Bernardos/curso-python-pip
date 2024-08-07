@@ -1,0 +1,10 @@
+FROM python:3.8 
+
+workdir /web-store
+COPY  requirements.txt /web-store/requirements.txt 
+
+run pip install --no--cahe-dir --upgrade  -r /web_sotore/requirements.txt
+
+COPY . /web-store/
+
+CMD bash -c "while tru; do sleep 1; done"
